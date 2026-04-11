@@ -1,0 +1,54 @@
+{
+    "weAreDifferent": [
+        {
+            "id": 1,
+            "title": "Authentic Ayurvedic Heritage",
+            "description": "At Lotus, we blend traditional Ayurvedic wisdom with modern spa techniques. Our therapists are trained in ancient healing practices, ensuring every massage and treatment follows time-tested methods that promote holistic wellness and rejuvenation."
+        },
+        {
+            "id": 2,
+            "title": "Certified & Experienced Therapists",
+            "description": "Lotus takes pride in our team of professionally certified therapists with over 5+ years of experience. Each expert understands body anatomy, pressure points, and therapeutic techniques to deliver results that go beyond relaxation."
+        },
+        {
+            "id": 3,
+            "title": "100% Hygienic & Sanitized Environment",
+            "description": "Your safety is our priority at Lotus Spa Center. We maintain hospital-grade cleanliness standards with sanitized treatment rooms, fresh linens for every client, and sterilized equipment, ensuring a worry-free spa experience in Malad."
+        },
+        {
+            "id": 4,
+            "title": "Premium Quality Products",
+            "description": "We exclusively use organic, chemical-free oils and products at Lotus. From aromatic essential oils to herbal scrubs, every product is carefully selected to nourish your skin without harmful additives."
+        },
+        {
+            "id": 5,
+            "title": "Customized Treatment Plans",
+            "description": "Unlike generic spa services, Lotus offers personalized consultation before every session. We understand your specific needs, health conditions, and preferences to create a tailored wellness plan just for you."
+        },
+        {
+            "id": 6,
+            "title": "Serene Ambiance & Privacy",
+            "description": "Step into Lotus and escape Mumbai's chaos. Our thoughtfully designed interiors feature calming music, aromatherapy, soft lighting, and private treatment rooms that create a tranquil sanctuary for complete relaxation."
+        },
+        {
+            "id": 7,
+            "title": "Comprehensive Service Menu",
+            "description": "From Swedish and deep tissue massage to body scrubs, facials, and couple spa packages, Lotus Spa Center in Malad offers an extensive range of services under one roof to address all your wellness needs."
+        },
+        {
+            "id": 8,
+            "title": "Transparent Pricing, No Hidden Costs",
+            "description": "At Lotus, what you see is what you pay. We believe in honest pricing with no surprise charges. Our packages are clearly listed with detailed inclusions, ensuring complete transparency and value for money."
+        },
+        {
+            "id": 9,
+            "title": "Convenient Location in Malad",
+            "description": "Strategically located in Malad, Mumbai, Lotus Spa Center is easily accessible via road and rail. Whether you're a local resident or visiting from nearby areas, finding us is hassle-free with ample parking facilities."
+        },
+        {
+            "id": 10,
+            "title": "Customer-First Approach",
+            "description": "Your satisfaction drives everything we do at Lotus. From flexible appointment scheduling to post-treatment follow-ups, we go the extra mile to ensure every visit exceeds your expectations and leaves you refreshed and rejuvenated."
+        }
+    ]
+}

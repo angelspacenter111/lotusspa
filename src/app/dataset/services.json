@@ -1,0 +1,85 @@
+{
+    "content": [
+        {
+            "name": "Thai Massage",
+            "description": "Traditional Thai massage improves flexibility, relieves muscle tension, and boosts energy using stretching and pressure techniques.",
+            "image_url": "https://angelspa.vercel.app/assets/img/blog/angelspa-thisspa.jpg"
+        },
+        {
+            "name": "Swedish Massage",
+            "description": "A gentle full-body massage using long strokes to relax muscles, improve blood circulation, and reduce stress effectively.",
+            "image_url": "https://angelspa.vercel.app/assets/img/swedish-massage.png"
+        },
+        {
+            "name": "Aromatherapy Massage",
+            "description": "Uses essential oils with massage techniques to calm the mind, reduce stress, and enhance overall emotional well-being.",
+            "image_url": "https://angelspa.vercel.app/assets/img/aromatherapy-angelspa.webp"
+        },
+        {
+            "name": "Hot Stone Therapy",
+            "description": "Heated stones are placed on the body to relax muscles, improve circulation, and provide deep relaxation and comfort.",
+            "image_url": "https://angelspa.vercel.app//assets/img/hot-stone-massage-banner.jpg"
+        },
+        {
+            "name": "Head Massage",
+            "description": "Relieves stress, improves blood flow to the scalp, and helps reduce headaches and mental fatigue.",
+            "image_url": "http://localhost:3000/assets/head_massage.webp"
+        },
+        {
+            "name": "Body Scrub Treatment",
+            "description": "Exfoliates dead skin cells, leaving your skin smooth, glowing, and refreshed while improving blood circulation."
+        },
+        {
+            "name": "Body Wrap Therapy",
+            "description": "Detoxifies the body using herbal or mineral wraps that hydrate skin and remove toxins effectively."
+        },
+        {
+            "name": "Reflexology",
+            "description": "Applies pressure on foot points connected to body organs, promoting healing, relaxation, and better internal balance."
+        },
+        {
+            "name": "Foot Massage",
+            "description": "A relaxing treatment focusing on feet pressure points to improve circulation and reduce stress."
+        },
+        {
+            "name": "Facial Treatment",
+            "description": "Cleanses, exfoliates, and nourishes the skin, giving a fresh, glowing, and youthful appearance."
+        },
+        {
+            "name": "Anti-Aging Facial",
+            "description": "Reduces wrinkles and fine lines using advanced skincare techniques to improve skin texture and elasticity."
+        },
+        {
+            "name": "Couples Massage",
+            "description": "A relaxing spa experience for two people in the same room, enhancing bonding and relaxation together."
+        },
+        {
+            "name": "Balinese Massage",
+            "description": "A combination of gentle stretches, acupressure, and aromatherapy to deeply relax body and mind."
+        },
+        {
+            "name": "Shiatsu Massage",
+            "description": "Japanese therapy using finger pressure on energy points to restore balance and reduce stress."
+        },
+        {
+            "name": "Sports Massage",
+            "description": "Designed for athletes to prevent injuries, improve flexibility, and speed up muscle recovery."
+        },
+        {
+            "name": "Back & Shoulder Massage",
+            "description": "Targets tension in upper body areas to relieve stiffness, pain, and improve posture."
+        },
+        {
+            "name": "Herbal Compress Therapy",
+            "description": "Warm herbal pouches are applied to relax muscles, reduce pain, and improve blood circulation."
+        },
+        {
+            "name": "Lymphatic Drainage Massage",
+            "description": "Gentle massage technique that helps remove toxins and improves lymph flow for better immunity."
+        },
+        {
+            "name": "Spa Manicure & Pedicure",
+            "description": "Beautifies hands and feet while relaxing muscles, improving skin health, and enhancing overall appearance."
+        }
+    ]
+}
