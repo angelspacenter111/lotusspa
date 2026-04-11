@@ -19,7 +19,7 @@ export async function generateMetadata() {
 			siteName: name,
 			images: [
 				{
-					url: base_url + '/assets/logot.png',
+					url: base_url + 'logot.png',
 					width: 1200,
 					height: 630,
 					alt: "Lotus Spa In Mumbai",
@@ -53,7 +53,7 @@ export default function Home() {
 						</div>
 						<div className="col-lg-6">
 							<div className="text-center">
-								<img src={base_url + '/assets/logot.png'} alt={'Spa center in mumbai - ' + name} className="img-fluid rounded-3" />
+								<img src={base_url + 'logot.png'} alt={'Spa center in mumbai - ' + name} className="img-fluid rounded-3" />
 							</div>
 						</div>
 					</div>
