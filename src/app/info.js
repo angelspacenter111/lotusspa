@@ -2,8 +2,8 @@ const name = "Lotus Spa";
 const contact = "+91 9967313968";
 
 // Live
-const base_url = 'https://lotusspamalad.vercel.app/';
-const image_url = 'https://lotusspamalad.vercel.app/assets/';
+const base_url = 'https://lotusspainmalad.vercel.app/';
+const image_url = 'https://lotusspainmalad.vercel.app/assets/';
 
 // Local
 // const base_url = 'http://localhost:3000/';
