@@ -15,100 +15,53 @@ const page = () => {
                     </nav>
                 </div>
             </section>
-            <section className="section-padding">
+            <section className="section-padding" style={{ paddingBottom: "10px" }}>
                 <div className="container">
                     <div className="section-title">
-                        <h2>Our Story</h2>
+                        <h2>Who We Are – Lotus Spa & Massage Center in Malad</h2>
                     </div>
                     <div className="row align-items-center">
-                        <div className="col-lg-6 mb-4">
+                        <div className="col-lg-12 mb-4">
                             <div className="story-content">
-                                <p>Blue Lotus was founded in 2015 with a simple mission: to provide a sanctuary of peace
-                                    and rejuvenation in the bustling city of Mumbai. What began as a small wellness center with
-                                    just three treatment rooms has grown into one of Malad West's premier destinations for
-                                    relaxation and self-care.</p>
-                                <p>Our founder, Maya Patel, envisioned a space where people could escape the stresses of daily
-                                    life and reconnect with their inner peace. Drawing inspiration from ancient wellness
-                                    traditions and modern therapeutic techniques, she created a holistic approach to wellness
-                                    that addresses the needs of the mind, body, and spirit.</p>
-                                <p>Today, Blue Lotus spans over 5,000 square feet, featuring 12 treatment rooms, a
-                                    relaxation lounge, steam rooms, and a team of highly skilled therapists dedicated to
-                                    providing exceptional experiences for every client.</p>
-                                <p>Despite our growth, we remain committed to our founding principles of personalized care,
-                                    attention to detail, and creating an atmosphere of tranquility that transports you far from
-                                    the city's hustle and bustle.</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 mb-4">
-                            <div className="story-image">
-                                <img src="https://picsum.photos/seed/spa-interior/600/500.jpg" alt="Blue Lotus Interior" className="img-fluid rounded-3 shadow" />
+                                <p>Lotus Spa Malad is a professional and trusted <b>spa in Malad, Mumbai</b> offering high-quality wellness and relaxation services. As a well-known <b>massage center in Malad</b>, we are dedicated to helping people reduce stress, relax their body, and improve their overall well-being. Our goal is to create a peaceful environment where clients can take a break from their busy lifestyle. At <b>Lotus Spa in Malad, Mumbai</b>, we understand that stress and body pain are common in today’s fast-paced life. That is why we provide a range of services including <b>body massage in Malad</b>, relaxation therapies, and wellness treatments. Our spa is designed with soothing music, soft lighting, and a calm atmosphere to give you the best experience.</p>
+                                <p>We have a team of trained therapists who provide personalized services based on your needs. This makes us one of the <b>best massage centers in Malad</b>. We also maintain high hygiene standards, ensuring a safe and clean environment for every client.If you are searching for the <b>best spa in Malad</b> or a reliable <b>spa center in Malad, Mumbai</b>, Lotus Spa is the perfect place to relax and refresh.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="section-padding bg-light">
+
+            <section className="section-padding" style={{ padding: "10px 0" }}>
                 <div className="container">
                     <div className="section-title">
-                        <h2>Meet Our Team</h2>
+                        <h2>Our Mission & Vision – Spa in Malad Mumbai</h2>
                     </div>
-                    <div className="row">
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <div className="team-member">
-                                <img src="https://picsum.photos/seed/maya-patel/400/400.jpg" alt="Maya Patel" />
-                                <h4>Maya Patel</h4>
-                                <p>Founder &amp; Director</p>
-                                <p>With over 15 years of experience in wellness and spa management, Maya is the visionary behind
-                                    Blue Lotus.</p>
-                                <div className="social-links">
-                                    <a href="#"><i className="fab fa-linkedin-in" /></a>
-                                    <a href="#"><i className="fab fa-instagram" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <div className="team-member">
-                                <img src="https://picsum.photos/seed/rahul-sharma/400/400.jpg" alt="Rahul Sharma" />
-                                <h4>Rahul Sharma</h4>
-                                <p>Head Therapist</p>
-                                <p>A certified massage therapist with expertise in various modalities including Swedish, deep
-                                    tissue, and sports massage.</p>
-                                <div className="social-links">
-                                    <a href="#"><i className="fab fa-linkedin-in" /></a>
-                                    <a href="#"><i className="fab fa-instagram" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <div className="team-member">
-                                <img src="https://picsum.photos/seed/priya-nair/400/400.jpg" alt="Priya Nair" />
-                                <h4>Priya Nair</h4>
-                                <p>Senior Esthetician</p>
-                                <p>Specializing in advanced facial treatments and skincare solutions with over 10 years of
-                                    experience.</p>
-                                <div className="social-links">
-                                    <a href="#"><i className="fab fa-linkedin-in" /></a>
-                                    <a href="#"><i className="fab fa-instagram" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <div className="team-member">
-                                <img src="https://picsum.photos/seed/arjun-verma/400/400.jpg" alt="Arjun Verma" />
-                                <h4>Arjun Verma</h4>
-                                <p>Wellness Consultant</p>
-                                <p>A yoga and meditation instructor who helps clients achieve holistic wellness through
-                                    mind-body practices.</p>
-                                <div className="social-links">
-                                    <a href="#"><i className="fab fa-linkedin-in" /></a>
-                                    <a href="#"><i className="fab fa-instagram" /></a>
-                                </div>
+                    <div className="row align-items-center">
+                        <div className="col-lg-12 mb-4">
+                            <div className="story-content">
+                                <p>At Lotus Spa Malad, our mission is to provide the best services as a leading spa in Malad West and nearby areas. We focus on delivering high-quality therapies that help people relax and improve their health. As a trusted massage center in Malad, we aim to ensure complete customer satisfaction. Our vision is to become the best spa in Malad and a top-rated spa center in Malad, Mumbai known for quality, hygiene, and professionalism. Whether you visit us for a body massage in Malad or relaxation therapy, we ensure a comfortable and satisfying experience. We also promote wellness and self-care. Regular spa treatments at a professional spa in Malad East or West can help reduce stress, improve blood circulation, and enhance your lifestyle.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="section-padding">
+
+            <section className="section-padding" style={{ padding: "10px 0" }}>
+                <div className="container">
+                    <div className="section-title">
+                        <h2>Why Choose Our Spa in Malad Mumbai</h2>
+                    </div>
+                    <div className="row align-items-center">
+                        <div className="col-lg-12 mb-4">
+                            <div className="story-content">
+                                <p>Lotus Spa in Malad, Mumbai is one of the best options if you are looking for a professional massage center in Malad. We are known for our quality service, relaxing environment, and customer satisfaction. Our experienced therapists make us one of the best massage centers in Malad. We provide personalized treatments, including body massage in Malad, to suit your needs. We maintain strict hygiene standards, making us a safe and trusted spa center in Malad, Mumbai. Our calm atmosphere and affordable pricing make us a preferred spa in Malad West for many clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section-padding" style={{ padding: "10px 0" }}>
                 <div className="container">
                     <div className="section-title">
                         <h2>Our Philosophy</h2>

@@ -120,11 +120,11 @@ export default function Home() {
 								return (
 									<div className="col-md-6 col-lg-3 mb-4" key={index}>
 										<div className="service-card">
-											<img src={item.image_url} alt="Aromatherapy Massage" />
+											<img src={item.image_url} alt={item.name} />
 											<div className="service-card-content">
 												<h3>{item.name}</h3>
 												<p>{item.description}.</p>
-												<a href="services.html" className="btn btn-sm btn-outline-primary">Learn More</a>
+												<a href="" className="btn btn-sm btn-outline-primary">Learn More</a>
 											</div>
 										</div>
 									</div>
