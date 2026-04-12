@@ -2,7 +2,8 @@ import Navigation from '@/app/components/Navigation'
 import hero from '@/app/dataset/herosection.json'
 import services from '@/app/dataset/services.json'
 import differentsection from '@/app/dataset/weAreDifferent.json'
-import { name, image_url, base_url } from '@/app/info'
+import { name, image_url, base_url, email, contact, address } from '@/app/info'
+import { Metadata } from 'next';
 
 
 export async function generateMetadata() {
@@ -62,39 +63,40 @@ export default function Home() {
 
 			<section className="container">
 				<div className="service-finder" id="serviceFinder">
-					<h3 className="text-center mb-4">Find Your Perfect Treatment</h3>
-					<p className="text-center mb-4">Answer a few questions to discover the ideal service for your needs</p>
+					<h3 className="text-center mb-4">Discover Your Ideal Spa Journey at Lotus Spa, Malad</h3>
+					<p className="mb-4">Every guest deserves a personalised experience. Simply select your nearest location and preferred service so our team can prepare everything in advance — that way, when you arrive, you can leave the outside world behind and step straight into relaxation.</p>
 					<form id="serviceFinderForm">
 						<div className="row g-3">
-							<div className="col-md-4">
-								<label className="form-label">What's your primary goal?</label>
-								<select className="form-select" id="goalSelect">
-									<option value>Select your goal</option>
-									<option value="relaxation">Stress Relief &amp; Relaxation</option>
-									<option value="pain">Pain Relief</option>
-									<option value="beauty">Beauty &amp; Skincare</option>
-									<option value="detox">Detox &amp; Cleansing</option>
-									<option value="energy">Energy Boost</option>
+							<div className="col-md-6">
+								<label className="form-label">Location</label>
+								<select className="form-select" id="locationSelect">
+									<option value="">Select your location</option>
+									<option value="malad-west">Malad West</option>
+									<option value="malad-east">Malad East</option>
+									<option value="evershine-nagar">Evershine Nagar</option>
+									<option value="kandivali-west">Kandivali West</option>
+									<option value="kandivali-east">Kandivali East</option>
+									<option value="thakur-village">Thakur Village</option>
+									<option value="goregaon-west">Goregaon West</option>
+									<option value="goregaon-east">Goregaon East</option>
+									<option value="aarey-colony">Aarey Colony</option>
+									<option value="mindspace-malad">Mindspace Malad</option>
 								</select>
 							</div>
-							<div className="col-md-4">
-								<label className="form-label">How much time do you have?</label>
-								<select className="form-select" id="timeSelect">
-									<option value>Select duration</option>
-									<option value={30}>30 minutes</option>
-									<option value={60}>60 minutes</option>
-									<option value={90}>90 minutes</option>
-									<option value={120}>2 hours or more</option>
-								</select>
-							</div>
-							<div className="col-md-4">
-								<label className="form-label">Preferred treatment type?</label>
-								<select className="form-select" id="typeSelect">
-									<option value>Select type</option>
-									<option value="massage">Massage</option>
-									<option value="facial">Facial</option>
-									<option value="body">Body Treatment</option>
-									<option value="package">Package</option>
+							<div className="col-md-6">
+								<label className="form-label">Services</label>
+								<select className="form-select" id="serviceSelect">
+									<option value="">Select Spa Service</option>
+									<option value="swedish-massage">Swedish Massage</option>
+									<option value="deep-tissue-massage">Deep Tissue Massage</option>
+									<option value="aromatherapy">Aromatherapy Massage</option>
+									<option value="hot-stone-therapy">Hot Stone Therapy</option>
+									<option value="body-scrub">Body Scrub</option>
+									<option value="facial-treatment">Facial Treatment</option>
+									<option value="body-wrap">Body Wrap</option>
+									<option value="reflexology">Reflexology</option>
+									<option value="thai-massage">Thai Massage</option>
+									<option value="head-massage">Head & Scalp Massage</option>
 								</select>
 							</div>
 						</div>
@@ -104,12 +106,6 @@ export default function Home() {
 							</button>
 						</div>
 					</form>
-					<div id="finderResult" className="mt-4" style={{ display: 'none' }}>
-						<div className="alert alert-success">
-							<h5>Recommended Service:</h5>
-							<p id="recommendedService" />
-						</div>
-					</div>
 				</div>
 			</section>
 
@@ -139,6 +135,9 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+
+
 			<section className="section-padding" style={{ background: 'var(--gradient-primary)' }}>
 				<div className="container text-center">
 					<h2 className="text-white mb-4">Ready to Experience Pure Relaxation?</h2>
@@ -173,30 +172,35 @@ export default function Home() {
 			<section className="section-padding">
 				<div className="container">
 					<div className="section-title">
-						<h2>How It Works</h2>
-						<h4>Discover Your Path to Deep Relaxation at Lotus Spa</h4>
+						<h2>Why Choose Lotus Spa in Malad, Mumbai</h2>
 					</div>
 					<div className="row align-items-center">
 						<div className="story-content">
-							<p>Welcome to Lotus Spa, the Best Spa Center in Malad, Mumbai, where tranquility meets luxury. We understand that in the bustling neighborhood of Malad, finding moments of peace and rejuvenation is essential for your well-being. That's why we've made your spa experience effortlessly simple and incredibly relaxing. Discover how easy it is to escape the chaos of Mumbai and step into a world of serenity at our premium Spa Center in Malad, Mumbai.</p>
-							<h5>Step 1: Choose Your Perfect Service</h5>
-							<p>Your relaxation journey begins with selecting from our extensive menu of wellness treatments. At Lotus Spa, we offer a diverse range of therapeutic services tailored to meet your unique needs. Whether you're seeking relief from muscle tension with our signature deep tissue massage, looking to detoxify with our aromatherapy sessions, or planning a romantic couple's spa experience, we have something special for everyone.</p>
-							<p>Our experienced therapists at this renowned Spa Center in Malad, Mumbai specialize in traditional Ayurvedic massages, Swedish therapy, hot stone treatments, and rejuvenating facials. Browse through our comprehensive service catalog on our website or call our friendly team who will guide you in choosing the perfect treatment based on your wellness goals. Each service is designed with precision to deliver maximum relaxation and therapeutic benefits.</p>
-							<h5>Step 2: Book Your Appointment Conveniently</h5>
-							<p>Booking your appointment at the Best Spa Center in Malad, Mumbai | Lotus Spa is incredibly simple and hassle-free. We value your time and have streamlined our booking process to ensure convenience at every step. You can schedule your session through multiple channels:</p>
-							<p><b>Online Booking:</b> Visit our user-friendly website and select your preferred service, date, and time slot with just a few clicks. Our real-time availability calendar ensures you get the appointment that fits perfectly into your busy Mumbai schedule.</p>
-							<p><b>Phone Reservations:</b> Prefer speaking to someone? Our courteous staff is available to assist you with bookings, answer your queries, and provide personalized recommendations.</p>
-							<p><b>Walk-in Options:</b> Located conveniently in Malad, Mumbai, we also welcome walk-in guests, though advance booking is recommended to secure your preferred time slot.</p>
-							<h5>Step 3: Visit Our Serene Spa Sanctuary</h5>
-							<p>When you arrive at our Spa Center in Malad, Mumbai, you'll immediately feel the stress melting away. Our strategically located facility is easily accessible from all parts of Malad East and West, with ample parking facilities for your convenience.</p>
-							<p>Upon entering Lotus Spa, you'll be warmly greeted by our professional reception team who will guide you through a brief consultation. This helps us understand your specific concerns, preferences, and any health considerations. You'll then be escorted to our beautifully designed changing rooms where you can freshen up and slip into comfortable spa attire.</p>
-							<p>Our tranquil ambiance features soothing music, aromatic fragrances, and calming décor that instantly transports you away from the hustle of Mumbai city life. Every corner of our Best Spa Center in Malad, Mumbai | Lotus Spa is thoughtfully designed to create an oasis of peace.</p>
-							<h5>Step 4: Relax & Rejuvenate Completely</h5>
-							<p>Now comes the best part – your complete relaxation experience! As you settle into our premium treatment rooms, our certified therapists will begin your chosen therapy with utmost care and professionalism. Each session at our Spa Center in Malad, Mumbai is customized to your comfort level and therapeutic needs.</p>
-							<p>Feel the tension dissolve from your muscles, let your mind drift into peaceful meditation, and allow the healing touch of our experts to rejuvenate your body and soul. We use only premium quality organic oils, natural products, and state-of-the-art spa equipment to ensure you receive the finest treatment.</p>
-							<p>After your therapy, enjoy complimentary herbal tea in our relaxation lounge, giving your body time to absorb the benefits of the treatment. Our post-treatment care advice helps you maintain that blissful feeling long after you leave.</p>
-							<p>Lotus Spa is more than just a spa – it's your personal wellness destination in the heart of Malad, Mumbai. Experience the difference that genuine care, professional expertise, and serene ambiance can make to your well-being.</p>
-							<p>Visit us today and discover why locals consistently rate us as the Best Spa Center in Malad, Mumbai | Lotus Spa. Your journey to complete relaxation is just four simple steps away!</p>
+							<p>If you are searching for a trusted spa in Malad, your search ends here. Lotus Spa has built a reputation for genuine relaxation, professional care, and a welcoming environment — making us a go-to wellness destination for residents across Malad and the surrounding areas.</p>
+							<p>We believe that wellness is not a luxury — it is a necessity. Our team of trained therapists works with every guest individually, ensuring each session is safe, hygienic, and tailored to what your body actually needs.</p>
+
+							<h5>Professional & Experienced Therapists</h5>
+							<p>Our therapists are certified specialists in a range of massage and wellness techniques. Whether you are looking for a gentle relaxation session or targeted deep-tissue work, they bring both expertise and care to every appointment.</p>
+
+							<h5>Premium Services at Honest Prices</h5>
+							<p>Quality spa treatment should not come with a surprise bill. At Lotus Spa, we price our services transparently and fairly — so you get a premium experience without stretching your budget. That commitment to value is one of the reasons our clients keep coming back.</p>
+
+							<h5>Clean, Safe & Comfortable Environment</h5>
+							<p>Hygiene is non-negotiable for us. Every room, treatment bed, and piece of equipment is thoroughly sanitised between sessions. You can walk in, switch off, and relax — knowing everything around you is clean and taken care of.</p>
+
+							<h5>A Wide Range of Treatments Under One Roof</h5>
+							<p>From aromatherapy and hot stone therapy to reflexology, body wraps, and full-body massages — we cover a broad spectrum of wellness needs. Whatever brings you in, we have a treatment that fits.</p>
+
+							<h5>Conveniently Located in Malad</h5>
+							<p>Our spa is easily accessible from both Malad West and Malad East, with good connectivity from nearby areas like Kandivali and Goregaon. Getting here is simple — and leaving refreshed is guaranteed.</p>
+
+							<h5>A Community of Happy, Returning Guests</h5>
+							<p>We take pride in the trust our guests place in us. Many of our clients visit regularly and refer their friends and family — not because we ask them to, but because the experience speaks for itself.</p>
+
+							<h5>Treatments Designed Around You</h5>
+							<p>No two guests are the same, and we do not treat them that way. Our team takes the time to understand your needs before every session and adjusts the treatment accordingly — so you always leave feeling exactly as you hoped.</p>
+
+							<p>Whether you are a first-time visitor or a long-time regular, Lotus Spa in Malad is here to give you a genuine, restorative experience every single time. Come visit us and see why so many people in Mumbai make us part of their wellness routine.</p>
 						</div>
 					</div>
 				</div>
@@ -363,8 +367,7 @@ export default function Home() {
 					<div className="row">
 						<div className="col-md-6 col-lg-3 mb-4">
 							<h4>About Lotus Spa</h4>
-							<p>Your premier destination for relaxation and rejuvenation in Malad West, Mumbai. Experience
-								tranquility and wellness at its finest.</p>
+							<p>A premium wellness destination in Malad West, Mumbai — where skilled therapists, a calming environment, and personalised treatments come together for a truly restorative experience.</p>
 							<div className="social-links-footer mt-3">
 								<a href="#"><i className="fab fa-facebook-f" /></a>
 								<a href="#"><i className="fab fa-instagram" /></a>
@@ -395,10 +398,9 @@ export default function Home() {
 						<div className="col-md-6 col-lg-3 mb-4">
 							<h4>Contact Info</h4>
 							<ul>
-								<li><i className="fas fa-map-marker-alt" /> Lotus Spa, Malad West, Mumbai, Maharashtra
-									400064</li>
-								<li><i className="fas fa-phone" /> +91 98765 43210</li>
-								<li><i className="fas fa-envelope" /> info@skywellnessspa.com</li>
+								<li><i className="fas fa-map-marker-alt" />{address}</li>
+								<li><i className="fas fa-phone" /> {contact}</li>
+								<li><i className="fas fa-envelope" /> {email}</li>
 								<li><i className="fas fa-clock" /> Mon-Sun: 9:00 AM - 9:00 PM</li>
 							</ul>
 						</div>
@@ -412,4 +414,3 @@ export default function Home() {
 		</>
 	);
 }
-
