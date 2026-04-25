@@ -1,5 +1,7 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
+import { name, image_url, base_url, email, contact, address } from '@/app/info'
+import Link from 'next/link'
 
 const page = () => {
     return (
@@ -10,7 +12,7 @@ const page = () => {
                     <h1>Services</h1>
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb justify-content-center">
-                            <li className="breadcrumb-item"><a href="index.html" style={{ color: 'rgba(255, 255, 255, 0.85)', textDecoration: 'none' }}>Home</a></li>
+                            <li className="breadcrumb-item"><Link href="/" style={{ color: 'rgba(255, 255, 255, 0.85)', textDecoration: 'none' }}>Home</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">Services</li>
                         </ol>
                     </nav>
@@ -22,7 +24,7 @@ const page = () => {
                         <h2>Our Premium Services</h2>
                         <p className="mt-3">Explore our comprehensive range of treatments designed to nurture your body and soul</p>
                     </div>
-                    <ul className="nav nav-tabs justify-content-center mb-5" id="serviceTabs" role="tablist">
+                    {/* <ul className="nav nav-tabs justify-content-center mb-5" id="serviceTabs" role="tablist">
                         <li className="nav-item" role="presentation">
                             <button className="nav-link active" id="massage-tab" data-bs-toggle="tab" data-bs-target="#massage" type="button">
                                 <i className="fas fa-hand-sparkles me-2" />Massage Therapies
@@ -43,16 +45,16 @@ const page = () => {
                                 <i className="fas fa-om me-2" />Wellness Packages
                             </button>
                         </li>
-                    </ul>
+                    </ul> */}
                     <div className="tab-content" id="serviceTabContent">
                         <div className="tab-pane fade show active" id="massage" role="tabpanel">
                             <div className="service-grid">
                                 <div className="service-card-new">
-                                    <div className="service-image" style={{ backgroundImage: 'url("https://picsum.photos/seed/swedish/400/300.jpg")' }}>
-                                        <span className="service-badge">Popular</span>
+                                    <div className="service-image" style={{ backgroundImage: 'url("/assets/swedish-massage-in-malad-mumbai-lotus-spa.webp")' }}>
+                                        <span className="service-badge">Lotus Spa</span>
                                     </div>
                                     <div className="service-content">
-                                        <h3>Swedish Massage</h3>
+                                        <Link href={"/best-swedish-massage-center-in-malad-mumbai-lotus-spa"}><h3>Swedish Massage</h3></Link>
                                         <p>Gentle, relaxing massage using long strokes to improve circulation and reduce stress.</p>
                                         <div className="service-price-new">
                                             <span className="currency">₹</span>
@@ -417,82 +419,6 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className="container">
-                <div className="special-offer-banner">
-                    <h2>Limited Time Offer</h2>
-                    <p className="lead">Book any two services and get 20% off on both!</p>
-                    <div className="countdown-timer">
-                        <div className="countdown-item">
-                            <span className="count" id="days">02</span>
-                            <span className="label">Days</span>
-                        </div>
-                        <div className="countdown-item">
-                            <span className="count" id="hours">15</span>
-                            <span className="label">Hours</span>
-                        </div>
-                        <div className="countdown-item">
-                            <span className="count" id="minutes">45</span>
-                            <span className="label">Minutes</span>
-                        </div>
-                        <div className="countdown-item">
-                            <span className="count" id="seconds">30</span>
-                            <span className="label">Seconds</span>
-                        </div>
-                    </div>
-                    <button className="btn btn-light btn-lg" >
-                        Claim Your Offer Now
-                    </button>
-                </div>
-            </section>
-            <section className="section-padding bg-light">
-                <div className="container">
-                    <div className="section-title">
-                        <h2>Frequently Asked Questions</h2>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8">
-                            <div className="accordion" id="serviceFAQ">
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header" id="faq1">
-                                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                                            How do I choose the right service for me?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse1" className="accordion-collapse collapse show" data-bs-parent="#serviceFAQ">
-                                        <div className="accordion-body">
-                                            Use our Service Finder tool at the top of the page! It will recommend the perfect treatment based on your goals, available time, and preferences. You can also consult with our spa specialists who will help you select the ideal service.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header" id="faq2">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                                            Can I combine multiple services in one visit?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse2" className="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
-                                        <div className="accordion-body">
-                                            Absolutely! We offer wellness packages that combine multiple treatments at a special price. You can also create your own combination by booking individual services back-to-back. Our staff will ensure smooth transitions between treatments.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header" id="faq3">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                                            Do you offer group bookings or spa parties?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse3" className="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
-                                        <div className="accordion-body">
-                                            Yes, we specialize in group bookings for special occasions like birthdays, bridal showers, and corporate events. Contact us at least two weeks in advance for groups of 4 or more to receive special group rates and customized arrangements.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section className="section-padding" style={{ background: 'var(--gradient-primary)' }}>
                 <div className="container text-center">
                     <h2 className="text-white mb-4">Ready to Begin Your Wellness Journey?</h2>
@@ -507,6 +433,54 @@ const page = () => {
                     </div>
                 </div>
             </section>
+            <footer className="footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6 col-lg-3 mb-4">
+                            <h4>About Lotus Spa</h4>
+                            <p>A premium wellness destination in Malad West, Mumbai — where skilled therapists, a calming environment, and personalised treatments come together for a truly restorative experience.</p>
+                            <div className="social-links-footer mt-3">
+                                <a href="#"><i className="fab fa-facebook-f" /></a>
+                                <a href="#"><i className="fab fa-instagram" /></a>
+                                <a href="#"><i className="fab fa-twitter" /></a>
+                                <a href="#"><i className="fab fa-linkedin-in" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-3 mb-4">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-md-6 col-lg-3 mb-4">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><a href="services.html">Massages</a></li>
+                                <li><a href="services.html">Facials</a></li>
+                                <li><a href="services.html">Body Treatments</a></li>
+                                <li><a href="services.html">Wellness Packages</a></li>
+                                <li><a href="services.html">Couples Treatments</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-md-6 col-lg-3 mb-4">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li><i className="fas fa-map-marker-alt" />{address}</li>
+                                <li><i className="fas fa-phone" /> {contact}</li>
+                                <li><i className="fas fa-envelope" /> {email}</li>
+                                <li><i className="fas fa-clock" /> Mon-Sun: 9:00 AM - 9:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="copyright">
+                        <p>© 2023 Lotus Spa. All Rights Reserved. Designed with <i className="fas fa-heart text-danger" /> in Mumbai</p>
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }

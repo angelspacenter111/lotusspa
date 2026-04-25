@@ -139,63 +139,14 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className="section-padding">
-                <div className="container">
-                    <div className="section-title">
-                        <h2>Gallery</h2>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="gallery-item">
-                                <img src="https://picsum.photos/seed/spa-reception/400/300.jpg" alt="Spa Reception" />
-                                <div className="gallery-overlay">
-                                    <i className="fas fa-search-plus" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="gallery-item">
-                                <img src="https://picsum.photos/seed/treatment-room/400/300.jpg" alt="Treatment Room" />
-                                <div className="gallery-overlay">
-                                    <i className="fas fa-search-plus" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="gallery-item">
-                                <img src="https://picsum.photos/seed/relaxation-lounge/400/300.jpg" alt="Relaxation Lounge" />
-                                <div className="gallery-overlay">
-                                    <i className="fas fa-search-plus" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="gallery-item">
-                                <img src="https://picsum.photos/seed/steam-room/400/300.jpg" alt="Steam Room" />
-                                <div className="gallery-overlay">
-                                    <i className="fas fa-search-plus" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="gallery-item">
-                                <img src="https://picsum.photos/seed/couples-suite/400/300.jpg" alt="Couples Suite" />
-                                <div className="gallery-overlay">
-                                    <i className="fas fa-search-plus" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="gallery-item">
-                                <img src="https://picsum.photos/seed/spa-lobby/400/300.jpg" alt="Spa Lobby" />
-                                <div className="gallery-overlay">
-                                    <i className="fas fa-search-plus" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <section className="section-padding" style={{ background: 'var(--gradient-primary)' }}>
+				<div className="container text-center">
+					<h2 className="text-white mb-4">Ready to Experience Pure Relaxation?</h2>
+					<p className="text-white mb-5">Book your appointment today and embark on a journey to wellness and rejuvenation.
+					</p>
+					<a href="tel:+919876543210" className="btn btn-outline-light btn-lg">Call Us</a>
+				</div>
+			</section>
             <footer className="footer">
                 <div className="container">
                     <div className="row">

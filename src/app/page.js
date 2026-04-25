@@ -124,7 +124,7 @@ export default function Home() {
 											<div className="service-card-content">
 												<h3>{item.name}</h3>
 												<p>{item.description}.</p>
-												<a href="" className="btn btn-sm btn-outline-primary">Learn More</a>
+												<a href={item.serviceurl} className="btn btn-sm btn-outline-primary">Learn More</a>
 											</div>
 										</div>
 									</div>
@@ -282,7 +282,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="section-padding bg-light">
+			{/* <section className="section-padding bg-light">
 				<div className="container">
 					<div className="section-title">
 						<h2>What Our Clients Say</h2>
@@ -352,7 +352,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<section className="section-padding" style={{ background: 'var(--gradient-primary)' }}>
 				<div className="container text-center">
 					<h2 className="text-white mb-4">Ready to Experience Pure Relaxation?</h2>
