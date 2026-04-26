@@ -3,7 +3,9 @@ import hero from '@/app/dataset/herosection.json'
 import services from '@/app/dataset/services.json'
 import differentsection from '@/app/dataset/weAreDifferent.json'
 import { name, image_url, base_url, email, contact, address } from '@/app/info'
-import { Metadata } from 'next';
+import Link from 'next/link';
+import Footer from './components/Footer'
+
 
 
 export async function generateMetadata() {
@@ -44,12 +46,12 @@ export default function Home() {
 							<h1 className="fw-bold text-white mb-4">{heroSectionContent.headline}</h1>
 							<p className="lead text-white mb-4">{heroSectionContent.subtext}</p>
 							<div className="d-flex gap-3">
-								<button className="btn btn-light btn-lg">
+								{/* <button className="btn btn-light btn-lg">
 									<i className="fas fa-search me-2" />Find Your Service
-								</button>
-								<a href="#services" className="btn btn-outline-light btn-lg">
+								</button> */}
+								<Link href="/services" className="btn btn-outline-light btn-lg">
 									<i className="fas fa-spa me-2" />{heroSectionContent.cta}
-								</a>
+								</Link>
 							</div>
 						</div>
 						<div className="col-lg-6">
@@ -362,54 +364,7 @@ export default function Home() {
 					<a href="tel:+919876543210" className="btn btn-outline-light btn-lg">Call Us</a>
 				</div>
 			</section>
-			<footer className="footer">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-6 col-lg-3 mb-4">
-							<h4>About Lotus Spa</h4>
-							<p>A premium wellness destination in Malad West, Mumbai — where skilled therapists, a calming environment, and personalised treatments come together for a truly restorative experience.</p>
-							<div className="social-links-footer mt-3">
-								<a href="#"><i className="fab fa-facebook-f" /></a>
-								<a href="#"><i className="fab fa-instagram" /></a>
-								<a href="#"><i className="fab fa-twitter" /></a>
-								<a href="#"><i className="fab fa-linkedin-in" /></a>
-							</div>
-						</div>
-						<div className="col-md-6 col-lg-3 mb-4">
-							<h4>Quick Links</h4>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</div>
-						<div className="col-md-6 col-lg-3 mb-4">
-							<h4>Our Services</h4>
-							<ul>
-								<li><a href="services.html">Massages</a></li>
-								<li><a href="services.html">Facials</a></li>
-								<li><a href="services.html">Body Treatments</a></li>
-								<li><a href="services.html">Wellness Packages</a></li>
-								<li><a href="services.html">Couples Treatments</a></li>
-							</ul>
-						</div>
-						<div className="col-md-6 col-lg-3 mb-4">
-							<h4>Contact Info</h4>
-							<ul>
-								<li><i className="fas fa-map-marker-alt" />{address}</li>
-								<li><i className="fas fa-phone" /> {contact}</li>
-								<li><i className="fas fa-envelope" /> {email}</li>
-								<li><i className="fas fa-clock" /> Mon-Sun: 9:00 AM - 9:00 PM</li>
-							</ul>
-						</div>
-					</div>
-					<div className="copyright">
-						<p>© 2023 Lotus Spa. All Rights Reserved. Designed with <i className="fas fa-heart text-danger" /> in Mumbai</p>
-					</div>
-				</div>
-			</footer>
+			<Footer />
 
 		</>
 	);

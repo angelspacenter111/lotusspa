@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '@/app/components/Navigation'
+import Footer from '../components/Footer'
 const page = () => {
     return (
         <>
@@ -147,56 +148,7 @@ const page = () => {
 					<a href="tel:+919876543210" className="btn btn-outline-light btn-lg">Call Us</a>
 				</div>
 			</section>
-            <footer className="footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <h4>About Blue Lotus</h4>
-                            <p>Your premier destination for relaxation and rejuvenation in Malad West, Mumbai. Experience
-                                tranquility and wellness at its finest.</p>
-                            <div className="social-links-footer mt-3">
-                                <a href="#"><i className="fab fa-facebook-f" /></a>
-                                <a href="#"><i className="fab fa-instagram" /></a>
-                                <a href="#"><i className="fab fa-twitter" /></a>
-                                <a href="#"><i className="fab fa-linkedin-in" /></a>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <h4>Our Services</h4>
-                            <ul>
-                                <li><a href="services.html">Massages</a></li>
-                                <li><a href="services.html">Facials</a></li>
-                                <li><a href="services.html">Body Treatments</a></li>
-                                <li><a href="services.html">Wellness Packages</a></li>
-                                <li><a href="services.html">Couples Treatments</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-md-6 col-lg-3 mb-4">
-                            <h4>Contact Info</h4>
-                            <ul>
-                                <li><i className="fas fa-map-marker-alt" /> Blue Lotus, Malad West, Mumbai, Maharashtra
-                                    400064</li>
-                                <li><i className="fas fa-phone" /> +91 98765 43210</li>
-                                <li><i className="fas fa-envelope" /> info@skywellnessspa.com</li>
-                                <li><i className="fas fa-clock" /> Mon-Sun: 9:00 AM - 9:00 PM</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="copyright">
-                        <p>© 2023 Blue Lotus. All Rights Reserved. Designed with <i className="fas fa-heart text-danger" /> in Mumbai</p>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
 
         </>
     )
