@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+
 const nextConfig = {
 	reactCompiler: true,
 	reactStrictMode: false,
@@ -11,7 +11,5 @@ const nextConfig = {
 		legacyBrowsers: false, // 🚀 Important
 	}
 };
-
-
 
 export default nextConfig;
