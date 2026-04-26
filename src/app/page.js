@@ -6,8 +6,6 @@ import { name, image_url, base_url, email, contact, address } from '@/app/info'
 import Link from 'next/link';
 import Footer from './components/Footer'
 
-
-
 export async function generateMetadata() {
 	return {
 		title: "Best Spa Center In Malad, Mumbai | " + name,
@@ -25,7 +23,7 @@ export async function generateMetadata() {
 					url: base_url + 'logot.png',
 					width: 1200,
 					height: 630,
-					alt: "Lotus Spa In Mumbai",
+					alt: "Lotus Spa In Andheri, Mumbai",
 				},
 			],
 			locale: "en_IN",
@@ -126,7 +124,7 @@ export default function Home() {
 											<div className="service-card-content">
 												<h3>{item.name}</h3>
 												<p>{item.description}.</p>
-												<a href={item.serviceurl} className="btn btn-sm btn-outline-primary">Learn More</a>
+												<Link href={item.serviceurl ?? ''} className="btn btn-sm btn-outline-primary">Learn More</Link>
 											</div>
 										</div>
 									</div>
@@ -208,7 +206,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="section-padding">
+			{/* <section className="section-padding">
 				<div className="container">
 					<div className="section-title">
 						<h2>Our Locations</h2>
@@ -220,7 +218,7 @@ export default function Home() {
 								<div className="location-content">
 									<h3>Borivali</h3>
 									<p>Experience premium spa services in the heart of Borivali with a calm and luxurious ambiance.</p>
-									<a href="#" className="btn btn-outline-primary">View Details</a>
+									<Link href="/" className="btn btn-outline-primary">View Details</Link>
 								</div>
 							</div>
 						</div>
@@ -230,7 +228,7 @@ export default function Home() {
 								<div className="location-content">
 									<h3>Malad</h3>
 									<p>Relax and rejuvenate at our Malad branch with expert therapists and modern facilities.</p>
-									<a href="#" className="btn btn-outline-primary">View Details</a>
+									<Link href="/" className="btn btn-outline-primary">View Details</Link>
 								</div>
 							</div>
 						</div>
@@ -240,13 +238,13 @@ export default function Home() {
 								<div className="location-content">
 									<h3>Andheri</h3>
 									<p>Enjoy a peaceful escape in Andheri with premium wellness treatments and soothing interiors.</p>
-									<a href="#" className="btn btn-outline-primary">View Details</a>
+									<Link href="/" className="btn btn-outline-primary">View Details</Link>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 
 			<section className="section-padding">
@@ -261,7 +259,7 @@ export default function Home() {
 								<div className="discount">20% OFF</div>
 								<p>Enjoy a full day of pampering with our weekend special package including massage, facial, and
 									lunch.</p>
-								<a href="contact.html" className="btn btn-light">Book Now</a>
+								<Link href="/contact" className="btn btn-light">Book Now</Link>
 							</div>
 						</div>
 						<div className="col-md-6 col-lg-4 mb-4">
@@ -270,7 +268,7 @@ export default function Home() {
 								<div className="discount">15% OFF</div>
 								<p>Bring your partner and enjoy a romantic spa experience with side-by-side treatments in our
 									couple's suite.</p>
-								<a href="contact.html" className="btn btn-light">Book Now</a>
+								<Link href="/contact" className="btn btn-light">Book Now</Link>
 							</div>
 						</div>
 						<div className="col-md-6 col-lg-4 mb-4">
@@ -278,7 +276,7 @@ export default function Home() {
 								<h3>First Visit Special</h3>
 								<div className="discount">25% OFF</div>
 								<p>New to Lotus Spa? Enjoy 25% off your first treatment when you book this month.</p>
-								<a href="contact.html" className="btn btn-light">Book Now</a>
+								<Link href="/contact" className="btn btn-light">Book Now</Link>
 							</div>
 						</div>
 					</div>
@@ -360,7 +358,7 @@ export default function Home() {
 					<h2 className="text-white mb-4">Ready to Experience Pure Relaxation?</h2>
 					<p className="text-white mb-5">Book your appointment today and embark on a journey to wellness and rejuvenation.
 					</p>
-					<a href="contact.html" className="btn btn-light btn-lg me-3">Book Appointment</a>
+					<Link href="/contact" className="btn btn-light btn-lg me-3">Book Appointment</Link>
 					<a href="tel:+919876543210" className="btn btn-outline-light btn-lg">Call Us</a>
 				</div>
 			</section>

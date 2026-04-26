@@ -1,5 +1,5 @@
 const name = "Lotus Spa";
-const contact = "+91 99673 13968";
+const contact = "+91 79774 29005";
 const email = "angel.spacenter111@gmail.com";
 const address = "SV Road, Malad west, Mumbai - 400064"
 

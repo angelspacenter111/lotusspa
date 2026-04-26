@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import Navigation from '@/app/components/Navigation'
 import Footer from '../components/Footer'
 const page = () => {
@@ -10,7 +11,7 @@ const page = () => {
                     <h1>About Us</h1>
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb justify-content-center">
-                            <li className="breadcrumb-item"><a href="index.html" style={{ color: 'rgba(255, 255, 255, 0.85)', textDecoration: 'none' }}>Home</a></li>
+                            <li className="breadcrumb-item"><Link href="/" style={{ color: 'rgba(255, 255, 255, 0.85)', textDecoration: 'none' }}>Home</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">About Us</li>
                         </ol>
                     </nav>

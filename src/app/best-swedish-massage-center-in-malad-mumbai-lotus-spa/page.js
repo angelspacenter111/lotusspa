@@ -304,7 +304,7 @@ const page = () => {
                                 <h5>Luxury Facial</h5>
                                 <p>Revitalise your skin with bespoke facials using premium botanical products, tailored to
                                     your unique skin concerns.</p>
-                                <a href="#" className="sd-more-card-link" id="moreCardFacial">Read More <i className="fas fa-arrow-right ms-1" /></a>
+                                <Link href="/" className="sd-more-card-link" id="moreCardFacial">Read More <i className="fas fa-arrow-right ms-1" /></Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3">
@@ -313,7 +313,7 @@ const page = () => {
                                 <h5>Swedish Massage</h5>
                                 <p>Our signature essential-oil massage that melts stress, boosts energy, and restores
                                     natural balance from within.</p>
-                                <a href="service-detail.html" className="sd-more-card-link" id="moreCardAroma">Read More <i className="fas fa-arrow-right ms-1" /></a>
+                                <Link href="/services" className="sd-more-card-link" id="moreCardAroma">Read More <i className="fas fa-arrow-right ms-1" /></Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3">
@@ -322,7 +322,7 @@ const page = () => {
                                 <h5>Hot Stone Therapy</h5>
                                 <p>Smooth heated basalt stones ease deep muscle tension and improve circulation for total
                                     physical renewal.</p>
-                                <a href="#" className="sd-more-card-link" id="moreCardHotStone">Read More <i className="fas fa-arrow-right ms-1" /></a>
+                                <Link href="/" className="sd-more-card-link" id="moreCardHotStone">Read More <i className="fas fa-arrow-right ms-1" /></Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3">
@@ -331,7 +331,7 @@ const page = () => {
                                 <h5>Detox Body Wrap</h5>
                                 <p>Purify your body with our nourishing wraps that eliminate toxins, deeply hydrate, and
                                     leave your skin glowing.</p>
-                                <a href="#" className="sd-more-card-link" id="moreCardDetox">Read More <i className="fas fa-arrow-right ms-1" /></a>
+                                <Link href="/" className="sd-more-card-link" id="moreCardDetox">Read More <i className="fas fa-arrow-right ms-1" /></Link>
                             </div>
                         </div>
                     </div>
@@ -343,8 +343,8 @@ const page = () => {
                     <h2>Ready to Experience Pure Relaxation?</h2>
                     <p>Book your Swedish Massage session today and start your journey to complete wellness.</p>
                     <div className="sd-cta-btns">
-                        <a href="contact.html" id="ctaBookBtn" className="sd-cta-primary">Book Appointment</a>
-                        <a href={contact} id="ctaCallBtn" className="sd-cta-secondary">Call Us Now</a>
+                        <Link href="/contact" id="ctaBookBtn" className="sd-cta-primary">Book Appointment</Link>
+                        <a href={"tel: " + contact} className="sd-cta-secondary">Call Us Now</a>
                     </div>
                 </div>
             </section>

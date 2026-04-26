@@ -62,9 +62,9 @@ const ServicesSidebar = () => {
                     <h4 className="sd-widget-title sd-contact-title">Need Help? Contact Us</h4>
                     <p className="sd-contact-text">Our wellness consultants are available to guide you to the
                         perfect treatment.</p>
-                    <Link href={contact} id="sidebarCallBtn" className="sd-call-btn">
+                    <a href={contact} id="sidebarCallBtn" className="sd-call-btn">
                         <i className="fas fa-phone-alt me-2" />{contact}
-                    </Link>
+                    </a>
                 </div>
                 <div className="sd-sidebar-widget sd-hours-widget">
                     <h4 className="sd-widget-title"><i className="fas fa-clock me-2" />Opening Hours</h4>

@@ -11,10 +11,10 @@ const Footer = () => {
                         <p>Your premier destination for relaxation and rejuvenation in Malad, Mumbai. Experience
                             tranquility and wellness at its finest.</p>
                         <div className="social-links-footer mt-3">
-                            <a href="#"><i className="fab fa-facebook-f" /></a>
-                            <a href="#"><i className="fab fa-instagram" /></a>
-                            <a href="#"><i className="fab fa-twitter" /></a>
-                            <a href="#"><i className="fab fa-linkedin-in" /></a>
+                            <Link href="/"><i className="fab fa-facebook-f" /></Link>
+                            <Link href="/"><i className="fab fa-instagram" /></Link>
+                            <Link href="/"><i className="fab fa-twitter" /></Link>
+                            <Link href="/"><i className="fab fa-linkedin-in" /></Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-3 mb-4">
