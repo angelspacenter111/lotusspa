@@ -359,7 +359,7 @@ export default function Home() {
 					<p className="text-white mb-5">Book your appointment today and embark on a journey to wellness and rejuvenation.
 					</p>
 					<Link href="/contact" className="btn btn-light btn-lg me-3">Book Appointment</Link>
-					<a href="tel:+919876543210" className="btn btn-outline-light btn-lg">Call Us</a>
+					<a href={"tel:" + contact} className="btn btn-outline-light btn-lg">Call Us</a>
 				</div>
 			</section>
 			<Footer />
