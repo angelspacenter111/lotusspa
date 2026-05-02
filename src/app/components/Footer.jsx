@@ -1,6 +1,7 @@
 import React from 'react'
 import { contact, email } from '@/app/info'
 import Link from 'next/link'
+import WhatsAppButton from './WhatsAppButton'
 const Footer = () => {
     return (
         <footer className="footer">
@@ -53,6 +54,7 @@ const Footer = () => {
                         Mumbai</p>
                 </div>
             </div>
+            <WhatsAppButton />
         </footer>
     )
 }

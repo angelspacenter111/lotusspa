@@ -2,9 +2,66 @@ import React from 'react'
 import Link from 'next/link';
 import Navigation from '@/app/components/Navigation'
 import Footer from '../components/Footer'
+import { contact, base_url } from '@/app/info'
+
+export async function generateMetadata() {
+    return {
+        title: "About Us | Best Spa & Massage Center in Malad Mumbai | Lotus Spa",
+        description: "Learn more about Lotus Spa Malad, the leading massage center in Malad Mumbai. We offer premium body massage, relaxation therapies, and wellness treatments.",
+        keywords: [
+            "About Lotus Spa Malad",
+            "spa in Malad",
+            "massage center in Malad",
+            "body massage in Malad",
+            "best spa in Malad",
+            "spa center in Malad Mumbai",
+            "wellness center in Malad",
+            "spa near Inorbit Mall Malad"
+        ],
+        openGraph: {
+            title: "About Us | Best Spa & Massage Center in Malad Mumbai",
+            description: "Lotus Spa is a premium massage center in Malad West, offering top-notch wellness and relaxation therapies in a serene environment.",
+            url: base_url + "about",
+            siteName: "Lotus Spa",
+            images: [
+                {
+                    url: base_url + "logot.png",
+                    width: 800,
+                    height: 600,
+                    alt: "Lotus Spa Malad Mumbai",
+                },
+            ],
+            locale: "en_IN",
+            type: "website",
+        },
+        alternates: {
+            canonical: base_url + "about"
+        }
+    };
+}
+
 const page = () => {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "mainEntity": {
+            "@type": "HealthAndBeautyBusiness",
+            "name": "Lotus Spa Malad",
+            "description": "Lotus Spa Malad is a professional and trusted spa in Malad, Mumbai offering high-quality wellness and relaxation services.",
+            "image": base_url + "logot.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Malad West",
+                "addressRegion": "Mumbai",
+                "addressCountry": "IN"
+            },
+            "url": base_url
+        }
+    };
+
     return (
         <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <Navigation />
             <section className="page-header">
                 <div className="container">
@@ -25,8 +82,10 @@ const page = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-12 mb-4">
                             <div className="story-content">
-                                <p>Lotus Spa Malad is a professional and trusted <b>spa in Malad, Mumbai</b> offering high-quality wellness and relaxation services. As a well-known <b>massage center in Malad</b>, we are dedicated to helping people reduce stress, relax their body, and improve their overall well-being. Our goal is to create a peaceful environment where clients can take a break from their busy lifestyle. At <b>Lotus Spa in Malad, Mumbai</b>, we understand that stress and body pain are common in today’s fast-paced life. That is why we provide a range of services including <b>body massage in Malad</b>, relaxation therapies, and wellness treatments. Our spa is designed with soothing music, soft lighting, and a calm atmosphere to give you the best experience.</p>
-                                <p>We have a team of trained therapists who provide personalized services based on your needs. This makes us one of the <b>best massage centers in Malad</b>. We also maintain high hygiene standards, ensuring a safe and clean environment for every client.If you are searching for the <b>best spa in Malad</b> or a reliable <b>spa center in Malad, Mumbai</b>, Lotus Spa is the perfect place to relax and refresh.</p>
+                                <p>Lotus Spa Malad is a professional and trusted <Link href="/"><strong>spa in Malad, Mumbai</strong></Link> offering high-quality wellness and relaxation services. Nestled in the heart of one of the city's most bustling suburbs, our sanctuary serves as a peaceful retreat away from the chaotic pace of everyday life. As a well-known <Link href="/"><strong>massage center in Malad</strong></Link>, we are deeply dedicated to helping people reduce stress, relax their muscles, and significantly improve their overall physical and mental well-being.</p>
+                                <p>Our primary goal has always been to cultivate an environment that instantly puts you at ease the moment you walk through our doors. At <strong>Lotus Spa in Malad, Mumbai</strong>, we recognize that chronic stress, poor posture, and body pain are increasingly common issues faced by urban professionals. To combat this, we have curated a comprehensive menu of therapeutic services. From a soothing <Link href="/services"><strong>body massage in Malad</strong></Link> that melts away daily fatigue to specialized deep tissue and aromatherapy sessions, our <Link href="/services"><strong>wellness center in Malad</strong></Link> provides treatments that cater to your specific physical demands.</p>
+                                <p>Our spa interiors have been meticulously designed with your comfort in mind. We incorporate soft, ambient lighting, calming background music, and subtle, natural aromas to deliver the ultimate sensory relaxation experience. Furthermore, we take immense pride in our team of highly trained, certified therapists. Each therapist brings a wealth of knowledge and an intuitive touch, allowing them to personalize every session to target your unique trouble spots and tension areas. This unwavering commitment to individualized care is exactly what makes us one of the <Link href="/"><strong>best massage centers in Malad</strong></Link>.</p>
+                                <p>Cleanliness and safety are non-negotiable at Lotus Spa. We maintain rigorous, world-class hygiene standards, thoroughly sanitizing all rooms, linens, and equipment between sessions to ensure a pristine and secure environment for every client. Whether you are dealing with a stiff neck, lower back pain, or simply seeking the <strong>best spa in Malad</strong> to escape reality for an hour, our <Link href="/contact"><strong>spa center in Malad, Mumbai</strong></Link> is your perfect destination to unwind, recharge, and rediscover your inner balance.</p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +100,9 @@ const page = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-12 mb-4">
                             <div className="story-content">
-                                <p>At Lotus Spa Malad, our mission is to provide the best services as a leading spa in Malad West and nearby areas. We focus on delivering high-quality therapies that help people relax and improve their health. As a trusted massage center in Malad, we aim to ensure complete customer satisfaction. Our vision is to become the best spa in Malad and a top-rated spa center in Malad, Mumbai known for quality, hygiene, and professionalism. Whether you visit us for a body massage in Malad or relaxation therapy, we ensure a comfortable and satisfying experience. We also promote wellness and self-care. Regular spa treatments at a professional spa in Malad East or West can help reduce stress, improve blood circulation, and enhance your lifestyle.</p>
+                                <p>At Lotus Spa Malad, our mission is straightforward yet profound: to deliver the finest, most restorative wellness services as a leading <Link href="/"><strong>spa in Malad West</strong></Link>. While our roots are firmly planted here, we are also proud to serve residents from neighboring areas like Goregaon, Kandivali, and Andheri West who seek exceptional therapeutic care. We focus our energy entirely on providing high-quality, evidence-based therapies that actively help people relax, alleviate stubborn muscle pain, and genuinely improve their long-term health.</p>
+                                <p>As a trusted, community-focused <Link href="/services"><strong>massage center in Malad</strong></Link>, we prioritize complete customer satisfaction above all else. We listen closely to your feedback, constantly refining our techniques and expanding our service offerings. Our vision is to continually be recognized not just as the <strong>best spa in Malad</strong>, but as an indispensable part of your wellness routine. We strive to remain the top-rated <Link href="/contact"><strong>spa near Inorbit Mall Malad</strong></Link>, distinguished by our unwavering dedication to quality, impeccable hygiene, and absolute professionalism.</p>
+                                <p>Whether you are visiting us for a targeted, deep-pressure <strong>body massage in Malad</strong> to recover from a tough workout, or a gentle, flowing relaxation therapy to soothe your mind, we guarantee a deeply comfortable and satisfying experience. We believe that self-care is not a luxury, but a necessity. Regular treatments at our professional <Link href="/"><strong>spa in Malad East</strong></Link> or West can drastically lower cortisol (stress) levels, improve cardiovascular circulation, boost your immune system, and greatly enhance your overall quality of life.</p>
                             </div>
                         </div>
                     </div>
@@ -56,7 +117,9 @@ const page = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-12 mb-4">
                             <div className="story-content">
-                                <p>Lotus Spa in Malad, Mumbai is one of the best options if you are looking for a professional massage center in Malad. We are known for our quality service, relaxing environment, and customer satisfaction. Our experienced therapists make us one of the best massage centers in Malad. We provide personalized treatments, including body massage in Malad, to suit your needs. We maintain strict hygiene standards, making us a safe and trusted spa center in Malad, Mumbai. Our calm atmosphere and affordable pricing make us a preferred spa in Malad West for many clients.</p>
+                                <p>With so many options available across the city, you might wonder what sets Lotus Spa apart. Lotus Spa in Malad, Mumbai has established itself as the premier destination for anyone actively seeking a truly professional <strong>massage center in Malad</strong>. Our reputation is built on a foundation of consistency; we are universally recognized for delivering top-tier quality service, maintaining a deeply relaxing and beautifully appointed environment, and consistently achieving high customer satisfaction rates.</p>
+                                <p>What truly makes us special is our team of dedicated healers. Our experienced therapists possess a deep understanding of human anatomy, making us the absolute top destination for a highly effective <Link href="/best-deep-tissue-massage-center-in-malad-mumbai-lotus-spa"><strong>muscle pain massage in Malad</strong></Link>. We do not believe in a one-size-fits-all approach. Instead, we provide highly personalized treatments, starting every session with a brief consultation to understand your current physical state. Whether you need a vigorous sports massage or a comprehensive, soothing <Link href="/services"><strong>full body massage in Malad</strong></Link>, our services are specifically tailored to suit your exact requirements.</p>
+                                <p>Furthermore, we understand that peace of mind is crucial for genuine relaxation. That is why we strictly maintain world-class hygiene protocols, using premium, skin-safe oils and freshly laundered linens for every single guest. This commitment to cleanliness makes us a safe, trusted, and highly recommended <Link href="/"><strong>spa center in Malad, Mumbai</strong></Link>. Combining our tranquil atmosphere, expert staff, and transparent, affordable pricing plans, it is easy to see why we are the preferred <strong>spa in Malad West</strong> for countless clients who search for the perfect "<strong>spa near me</strong>".</p>
                             </div>
                         </div>
                     </div>
@@ -142,13 +205,13 @@ const page = () => {
                 </div>
             </section>
             <section className="section-padding" style={{ background: 'var(--gradient-primary)' }}>
-				<div className="container text-center">
-					<h2 className="text-white mb-4">Ready to Experience Pure Relaxation?</h2>
-					<p className="text-white mb-5">Book your appointment today and embark on a journey to wellness and rejuvenation.
-					</p>
-					<a href="tel:+919876543210" className="btn btn-outline-light btn-lg">Call Us</a>
-				</div>
-			</section>
+                <div className="container text-center">
+                    <h2 className="text-white mb-4">Ready to Experience Pure Relaxation?</h2>
+                    <p className="text-white mb-5">Book your appointment today and embark on a journey to wellness and rejuvenation.
+                    </p>
+                    <a href={"tel:" + contact} className="btn btn-outline-light btn-lg">Call Us</a>
+                </div>
+            </section>
             <Footer />
 
         </>

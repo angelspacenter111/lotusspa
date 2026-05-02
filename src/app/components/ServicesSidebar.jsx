@@ -4,8 +4,8 @@ import { contact } from '@/app/info'
 
 const ServicesSidebar = () => {
     return (
-        <div class="col-lg-4">
-            <div class="sd-sidebar">
+        <div className="col-lg-4">
+            <div className="sd-sidebar">
                 <div className="sd-sidebar-widget">
                     <h4 className="sd-widget-title">Our Services</h4>
                     <ul className="sd-services-list">

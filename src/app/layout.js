@@ -1,17 +1,23 @@
 
 import "./globals.css";
 import HeadSchema from "./components/HeadSchema";
+import second from '@/app/components/WhatsAppButton'
+
+export const metadata = {
+	robots: "index, follow",
+	verification: {
+		google: "-Fh3HXsAeNhlvKE-0Z4BzNo5-G2Q-EGJvIqHIXenIQ4",
+	},
+	other: {
+		"geo.region": "IN-MH",
+		"geo.placename": "Mumbai"
+	}
+};
+
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head>
-				<meta charSet="UTF-8" />
-
-				<meta name="robots" content="index, follow" />
-				<meta name="geo.region" content="IN-MH" />
-				<meta name="geo.placename" content="Mumbai" />
-				<meta name="google-site-verification" content="-Fh3HXsAeNhlvKE-0Z4BzNo5-G2Q-EGJvIqHIXenIQ4" />
-
 				<link rel="icon" href="https://lotusspainmalad.vercel.app/logot.png"></link>
 				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />

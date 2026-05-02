@@ -5,6 +5,7 @@ import differentsection from '@/app/dataset/weAreDifferent.json'
 import { name, image_url, base_url, email, contact, address } from '@/app/info'
 import Link from 'next/link';
 import Footer from './components/Footer'
+import WhatsAppButton from './components/WhatsAppButton'
 
 export async function generateMetadata() {
 	return {
@@ -122,7 +123,7 @@ export default function Home() {
 										<div className="service-card">
 											<img src={item.image_url} alt={item.name} />
 											<div className="service-card-content">
-												<h3>{item.name}</h3>
+												<Link href={item.serviceurl ?? ''}><h3>{item.name}</h3></Link>
 												<p>{item.description}.</p>
 												<Link href={item.serviceurl ?? ''} className="btn btn-sm btn-outline-primary">Learn More</Link>
 											</div>

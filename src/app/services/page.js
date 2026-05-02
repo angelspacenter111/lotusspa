@@ -71,14 +71,14 @@ const page = () => {
                                     </div>
                                 </div>
                                 <div className="service-card-new" >
-                                    <div className="service-image" style={{ backgroundImage: 'url("https://picsum.photos/seed/deep-tissue/400/300.jpg")' }}>
+                                    <div className="service-image" style={{ backgroundImage: 'url("assets/best-deep-tissue-massage-center-in-malad-mumbai-lotus-spa.webp")' }}>
                                     </div>
                                     <div className="service-content">
-                                        <h3>Deep Tissue Massage</h3>
+                                        <Link href={"/best-deep-tissue-massage-center-in-malad-mumbai-lotus-spa"}><h3>Deep Tissue Massage</h3></Link>
                                         <p>Targets deeper muscle layers to relieve chronic pain and muscle tension.</p>
                                         <div className="service-price-new">
                                             <span className="currency">₹</span>
-                                            <span className="amount">3,500</span>
+                                            <span className="amount">1,999</span>
                                             <span className="duration">75 min</span>
                                         </div>
                                         <ul className="benefits-list">
@@ -86,15 +86,15 @@ const page = () => {
                                             <li><i className="fas fa-check-circle" />Breaks up scar tissue</li>
                                             <li><i className="fas fa-check-circle" />Improves mobility</li>
                                         </ul>
-                                        <button className="btn btn-primary w-100">Book Now</button>
+                                        <Link href={"/best-deep-tissue-massage-center-in-malad-mumbai-lotus-spa"}><button className="btn btn-primary w-100">Book Now</button></Link>
                                     </div>
                                 </div>
                                 <div className="service-card-new">
-                                    <div className="service-image" style={{ backgroundImage: 'url("https://picsum.photos/seed/hot-stone/400/300.jpg")' }}>
+                                    <div className="service-image" style={{ backgroundImage: 'url("assets/hot-stone-massage-in-malad-mumbai-lotus-spa.webp")' }}>
                                         <span className="service-badge">Bestseller</span>
                                     </div>
                                     <div className="service-content">
-                                        <h3>Hot Stone Therapy</h3>
+                                        <Link href={"/best-hot-stone-massage-center-in-malad-mumbai-lotus-spa"}><h3>Hot Stone Massage</h3></Link>
                                         <p>Smooth heated stones placed on key points to warm and loosen tight muscles.</p>
                                         <div className="service-price-new">
                                             <span className="currency">₹</span>
@@ -110,10 +110,10 @@ const page = () => {
                                     </div>
                                 </div>
                                 <div className="service-card-new">
-                                    <div className="service-image" style={{ backgroundImage: 'url("https://picsum.photos/seed/aromatherapy/400/300.jpg")' }}>
+                                    <div className="service-image" style={{ backgroundImage: 'url("assets/aromatherapy-massage-in-malad-mumbai-lotus-spa.webp")' }}>
                                     </div>
                                     <div className="service-content">
-                                        <h3>Aromatherapy Massage</h3>
+                                        <Link href={"/best-aromatherapy-massage-center-in-malad-mumbai-lotus-spa"}><h3>Aromatherapy Massage</h3></Link>
                                         <p>Customized massage with essential oils for physical and emotional well-being.</p>
                                         <div className="service-price-new">
                                             <span className="currency">₹</span>
@@ -124,45 +124,6 @@ const page = () => {
                                             <li><i className="fas fa-check-circle" />Enhances mood</li>
                                             <li><i className="fas fa-check-circle" />Reduces anxiety</li>
                                             <li><i className="fas fa-check-circle" />Improves sleep quality</li>
-                                        </ul>
-                                        <button className="btn btn-primary w-100">Book Now</button>
-                                    </div>
-                                </div>
-                                <div className="service-card-new" >
-                                    <div className="service-image" style={{ backgroundImage: 'url("https://picsum.photos/seed/couples/400/300.jpg")' }}>
-                                        <span className="service-badge">Romantic</span>
-                                    </div>
-                                    <div className="service-content">
-                                        <h3>Couples Massage</h3>
-                                        <p>Share a relaxing experience with your partner in our couple's suite.</p>
-                                        <div className="service-price-new">
-                                            <span className="currency">₹</span>
-                                            <span className="amount">5,500</span>
-                                            <span className="duration">60 min</span>
-                                        </div>
-                                        <ul className="benefits-list">
-                                            <li><i className="fas fa-check-circle" />Shared experience</li>
-                                            <li><i className="fas fa-check-circle" />Private suite</li>
-                                            <li><i className="fas fa-check-circle" />Quality time together</li>
-                                        </ul>
-                                        <button className="btn btn-primary w-100">Book Now</button>
-                                    </div>
-                                </div>
-                                <div className="service-card-new" >
-                                    <div className="service-image" style={{ backgroundImage: 'url("https://picsum.photos/seed/thai/400/300.jpg")' }}>
-                                    </div>
-                                    <div className="service-content">
-                                        <h3>Thai Massage</h3>
-                                        <p>Ancient healing system combining acupressure and assisted yoga postures.</p>
-                                        <div className="service-price-new">
-                                            <span className="currency">₹</span>
-                                            <span className="amount">3,200</span>
-                                            <span className="duration">75 min</span>
-                                        </div>
-                                        <ul className="benefits-list">
-                                            <li><i className="fas fa-check-circle" />Increases flexibility</li>
-                                            <li><i className="fas fa-check-circle" />Improves energy flow</li>
-                                            <li><i className="fas fa-check-circle" />Reduces muscle tension</li>
                                         </ul>
                                         <button className="btn btn-primary w-100">Book Now</button>
                                     </div>
@@ -199,7 +160,7 @@ const page = () => {
                                         <p>Reduces fine lines and wrinkles with advanced techniques.</p>
                                         <div className="service-price-new">
                                             <span className="currency">₹</span>
-                                            <span className="amount">3,500</span>
+                                            <span className="amount">1,999</span>
                                             <span className="duration">75 min</span>
                                         </div>
                                         <ul className="benefits-list">
