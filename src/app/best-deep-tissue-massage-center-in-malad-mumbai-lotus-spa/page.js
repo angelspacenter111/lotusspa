@@ -110,7 +110,7 @@ const page = () => {
                     <div className="row g-5">
                         <div className="col-lg-8">
                             <div className="sd-hero-img-wrap">
-                                <img src="/assets/deep-tissue-massage-in-malad-mumbai-lotus-spa.webp" alt="Best Deep Tissue Massage Center in Malad Mumbai" className="sd-hero-img" />
+                                <img src="/assets/best-deep-tissue-massage-center-in-malad-mumbai-lotus-spa.webp" alt="Best Deep Tissue Massage Center in Malad Mumbai" className="sd-hero-img" />
                                 <div className="sd-img-badge"><i className="fas fa-star me-1" />Therapeutic Service</div>
                             </div>
 
